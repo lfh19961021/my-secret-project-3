@@ -1,7 +1,7 @@
 # Getting Started with Create React App
 
-# my-secret-project-3-backendServer
-with mongoDB atlas
+# my-secret-project-3
+Kanban view & List view Wishlist
 
 
 0. **Please make sure your backend server running!!**
