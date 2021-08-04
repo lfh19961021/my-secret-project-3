@@ -23,7 +23,7 @@ Feature:
 ![](NewRequest.gif)
 
 3. ListView, Sorter and Filter
-![]("ListView SorterFilter.gif")
+![]("ListViewSorterFilter.gif")
 
 4. Update information in List View or Kanban View
 ![](ListViewUpdate.gif)
