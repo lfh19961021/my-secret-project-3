@@ -13,3 +13,17 @@ with mongoDB atlas
 
 3. API Port: 3001
 http://localhost:3001/
+
+
+Feature:
+1. Kanban View
+![](KanbanView.gif)
+
+2. New Request
+![](NewRequest.gif)
+
+3. ListView, Sorter and Filter
+![](ListView SorterFilter.gif)
+
+4. Update information in List View or Kanban View
+![](ListViewUpdate.gif)
