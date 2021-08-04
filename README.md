@@ -18,7 +18,7 @@ https://github.com/lfh19961021/my-secret-project-3-backendServer
 
 3. Browse at
 
-http://localhost:3001/
+http://localhost:3000/
 
 
 Feature:
