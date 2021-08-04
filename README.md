@@ -3,6 +3,11 @@
 # my-secret-project-3-backendServer
 with mongoDB atlas
 
+
+0. #Please make sure your backend server running!!
+
+https://github.com/lfh19961021/my-secret-project-3-backendServer
+
 1. Install Dependencies
 
 ```npm i```
@@ -12,6 +17,7 @@ with mongoDB atlas
 ```npm start```
 
 3. API Port: 3001
+
 http://localhost:3001/
 
 
