@@ -16,7 +16,7 @@ https://github.com/lfh19961021/my-secret-project-3-backendServer
 
 ```npm start```
 
-3. API Port: 3001
+3. Browse at
 
 http://localhost:3001/
 
