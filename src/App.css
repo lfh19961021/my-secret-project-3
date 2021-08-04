@@ -1,38 +1,183 @@
-.App {
+.App {}
+
+.react-trello-board {
+  background: rgba(0, 0, 0, 0) !important;
+  flex: 1;
+}
+
+.react-trello-lane {
+  background: rgba(0, 0, 0, 0) !important;
+}
+
+.react-trello-board .vertical {
+  padding: 8px;
+  /* background: #F0F2F5 !important; */
+  background: #00000000;
+  height: 100%;
+  min-height: 320px;
+  min-width: 320px;
+  /* width: 100%; */
+}
+
+.smooth-dnd-draggable-wrapper {
+  margin: 4px;
+}
+
+.laneTitle {
+  width: 100% !important;
   text-align: center;
+  padding: 8px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.laneHeader+div {
+  max-height: fit-content;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ant-modal-header {
+  border-bottom: 2px solid #D04A02
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.ant-menu-item-selected {
+  color: #D04A02 !important;
+}
+
+.ant-menu-item-selected::after {
+  border-bottom: 2px solid #D04A02 !important;
+}
+
+.ticketInfoTab .ant-tabs-nav-list {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 100%;
+}
+
+.ticketInfoTab .ant-tabs-tab {
+  flex: 1;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.ticketInfoTab .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #000000 !important
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ticketInfoTab .ant-tabs-tab:hover {
+  color: #FFA600;
 }
+
+.ticketInfoTab .ant-tabs-ink-bar {
+  background: #FFB600;
+}
+
+.listviewTable .ant-table-thead .ant-table-cell {
+  background: #2D2D2D;
+  color: #FFF;
+}
+
+.listviewTable .listviewTableRow {
+  cursor: pointer;
+}
+
+.listviewTableTitle.submitted .ant-table-cell {
+  border-bottom: 4px solid #D93954;
+}
+
+.listviewTableTitle.submitted~.listviewTableRow .ant-table-cell {
+  border-bottom: 1px solid #D93954;
+}
+
+.listviewTableTitle.assgined .ant-table-cell {
+  border-bottom: 4px solid #2A5477;
+}
+
+.listviewTableTitle.assgined~.listviewTableRow .ant-table-cell {
+  border-bottom: 1px solid #2A5477;
+}
+
+.listviewTableTitle.pendingForClose .ant-table-cell {
+  border-bottom: 4px solid #2A9D8F;
+}
+
+.listviewTableTitle.pendingForClose~.listviewTableRow .ant-table-cell {
+  border-bottom: 1px solid #2A9D8F;
+}
+
+.listviewTableTitle.completed .ant-table-cell {
+  border-bottom: 4px solid #D04A02;
+}
+
+.listviewTableTitle.completed~.listviewTableRow .ant-table-cell {
+  border-bottom: 1px solid #D04A02;
+}
+
+.react-trello-board .myCardDragging {
+  transition: 0.2s transform;
+  transform: scale(110%);
+}
+
+.react-trello-board>div {
+  flex: 1;
+  height: 100%;
+}
+
+.react-trello-board .horizontal {
+  display: flex;
+  height: 100%;
+}
+
+.react-trello-board .horizontal>div {
+  flex: 1;
+}
+
+.react-trello-board .react-trello-lane {
+  height: 98%;
+  max-height: none;
+  width: 99%;
+}
+
+.react-trello-board .react-trello-lane>div {
+  width: 99%;
+  background: #F0F2F5;
+}
+
+.react-trello-board .vertical .react-trello-card {
+  max-width: none;
+}
+
+.content-container {
+  min-width: 760px;
+}
+
+.react-trello-board .react-trello-card:hover {
+  /* background: #2A5477; */
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #11171a;
+  border-radius: 10px;
+}
+
+.react-trello-board .react-trello-card .ant-avatar {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+}
+
+.react-trello-board .react-trello-card>header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+
+/* .react-trello-card{
+  border-bottom: 4px soild aqua !important;
+} */

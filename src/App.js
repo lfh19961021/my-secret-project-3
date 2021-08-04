@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+import { useEffect } from 'react';
+import { ConfigProvider, message } from 'antd';
+import Layout from './layout/Layout'
+
+
+import useStore from './store'
+
+import 'antd/dist/antd.css';
 import './App.css';
 
 function App() {
+  const fetchSetData = useStore(state => state.fetchSetData)
+  useEffect(() => {
+    fetchSetData()
+    
+    
+    // message.success('Load data from MongoDB Atlas successfully')
+    // message.error('Fail to load data from MongoDB Atlas, use dummy data')
+  })
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ConfigProvider>
+        <Layout />
+      </ConfigProvider>
     </div>
   );
 }
