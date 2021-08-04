@@ -26,4 +26,4 @@ Feature:
 ![](ListViewSorterFilter.gif)
 
 4. Update information in List View or Kanban View
-![](ListViewUpdate.gif)
+![](ListViewUpdate2.gif)
